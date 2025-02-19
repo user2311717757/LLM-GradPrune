@@ -41,3 +41,5 @@ layer_mlp_attention_prune/layer_head_attention_prune.py #The path_model in the f
 Use the .py files in the evaluation folder to conduct configuration/configuration_layer_prune/configuration_layer_mlp_attention_prune.
 ## Evaluation
 Use the .py files in the evaluation folder to conduct testing.
+## Things to note
+*If you are training using a non-pruned model or a model with only layer pruning, please use the original modeling_llama.py file provided in the transformers library. However, if you are training a model that incorporates both MLP and attention pruning, replace the original modeling_llama.py file with the modified version we provide. The modifications are located at lines 289 and 359.*

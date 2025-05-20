@@ -1,4 +1,4 @@
 
 swift export \
-    --adapters /mnt2/name_prune/saves/llama3-1-8b-instruct/lora/pubmed_acl_swift_layer_head_prune/v0-20250215-232837/checkpoint-948 \
+    --adapters /saves/llama3-1-8b-instruct/lora/arc_acl_swift_layer_prune_nomerge_10/v0-20250422-103133/checkpoint-402 \
     --merge_lora true

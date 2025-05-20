@@ -1,5 +1,8 @@
 # GradPruner: Gradient-guided Layer Pruning Enabling Efficient Fine-Tuning and Inference for LLMs
 This repo contains the code for our ARR 2025 submitted paper.
+
+Download the dataset from Hugging Face.
+
 ## Requirements
 **•** ms-swift == 3.0.0
 
@@ -13,7 +16,7 @@ This repo contains the code for our ARR 2025 submitted paper.
 
 **•** python == 3.11.9
 
-## Layer Important Pipeline
+## Layer Prune Pipeline
 ### Step1: Lora Training
 The experiments showed that a significant drop in loss occurs during the initial phase of model training (approximately within the first 40 steps). This phase represents the period during which the model rapidly learns downstream tasks. Accompanying this phenomenon, layers of the model exhibit varying degrees of learning capability. Gradient updates, as a method for adjusting model parameters, effectively reflect the extent to which the model adapts to and responds to downstream tasks. Consequently, the gradient updates during the early stages of training were utilized to assess the importance of different layers within the model.
 

@@ -1,5 +1,5 @@
-# LLM-SPISM: Structural Pruning of Large Language Models via Importance-aware Sparse Merging
-This repo contains the code for our ACL 2025 submitted paper.
+# GradPruner: Gradient-guided Layer Pruning Enabling Efficient Fine-Tuning and Inference for LLMs
+This repo contains the code for our ARR 2025 submitted paper.
 ## Requirements
 **•** ms-swift == 3.0.0
 

@@ -21,7 +21,7 @@ Download the dataset from Hugging Face.
 The experiments showed that a significant drop in loss occurs during the initial phase of model training (approximately within the first 40 steps). This phase represents the period during which the model rapidly learns downstream tasks. Accompanying this phenomenon, layers of the model exhibit varying degrees of learning capability. Gradient updates, as a method for adjusting model parameters, effectively reflect the extent to which the model adapts to and responds to downstream tasks. Consequently, the gradient updates during the early stages of training were utilized to assess the importance of different layers within the model.
 
 ```
-run_lora_llama3_1_layer_important.sh
+run_lora_llama3_1_layer_important.sh #Add the paths for path_model, data_path and save_path in the file.
 ```
 
 *When obtaining the gradients in this step, you need to replace the trainer.py file in the Transformers package with the file we provided, and modify the gradient-saving paths in lines 2460 and 2461.*
@@ -37,7 +37,9 @@ layer_prune/process_important.py #Add the paths for path_model and save_path in 
 ```
 
 ## Training model
-Use the .py files in the configuration_layer_prune folder to conduct training.
+Use the .py files in the configuration folder to conduct dense model training.
+
+Use the .py files in the configuration_layer_prune folder to conduct prune model training.
 
 ## Evaluation
 Use the .py files in the evaluation folder to conduct testing.

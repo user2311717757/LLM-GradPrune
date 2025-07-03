@@ -1,5 +1,5 @@
 # GradPruner: Gradient-guided Layer Pruning Enabling Efficient Fine-Tuning and Inference for LLMs
-This repo contains the code for our ARR 2025 submitted paper.
+This repo contains the code for our submitted paper.
 
 Download the dataset from Hugging Face.
 
